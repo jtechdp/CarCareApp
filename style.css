@@ -1,0 +1,470 @@
+
+body {
+	background-image: url(../images/baground.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	display: inline-block;
+	position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /*background-size: 100%;*/
+    /*background-size: 5600px 1600px;*/
+    background-size: 3000px 1450px;
+}
+
+.logotypeImage {
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.carCareApp {
+	height: 610px;
+}
+
+.fontInfoApp {
+	font-family: "Montserrat";
+	color: white;
+}
+
+.titleApp {
+	margin-top: 50px;
+	font-size: 84px;
+	line-height: 1em;
+}
+
+.contantOne {
+	margin-top: 36px;
+	font-size: 26px;
+}
+
+.contantTwo {
+	font-family: "Open Sans";
+	font-size: 18px;
+	margin-top: 30px;
+}
+
+.buttonsBlock {
+	margin-top: 40px;
+	padding-left: 5px;
+}
+
+.buttons {
+	display: inline-block;
+	background: url(../images/store.png) no-repeat;
+	width: 230px;
+	height: 84px;
+	cursor: pointer;
+}
+
+.AppStore {
+	background-position: -6px -3px;
+}
+
+.AppStore:hover {
+	background-position: -6px -93px
+}
+
+.AppStore:active {
+	background-position: -6px -183px
+}
+
+.GooglePlay {
+	background-position: -246px -3px;
+}
+
+.GooglePlay:hover {
+	background-position: -246px -93px;
+}
+
+.GooglePlay:active {
+	background-position: -246px -183px;
+}
+
+.phoneBox {
+	height: 650px;
+	margin-top: -100px;
+}
+
+.phoneImages {
+	transition: 1.5s;
+	position: absolute;
+}
+
+.phoneImages:hover {
+	margin-left: -60px;
+	transition: 1.5s;
+	position: absolute;
+}
+
+.screens {
+	height: 460px;
+}
+
+.screenImages {
+	transition: 2s;
+}
+
+.screenImages:hover {
+	position: absolute;
+	opacity: 0.4;
+	transition: 2s;
+}
+
+.features {
+	height: 400px;
+	margin-top: 120px;
+}
+
+.titleFeatures {
+	color: #6f6f70;
+	font-family: "Montserrat";
+	font-weight: lighter;
+	font-size: 30px;
+	letter-spacing: 8px;
+	padding-bottom: 20px;
+}
+
+.yellowLine {
+	color: #f4e003;
+	background-color: #f4e003;
+	height: 5px;
+	width: 60px;
+	border: none;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.titleBlock {
+	font-family: "Montserrat";
+	color: #333333;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.textBlock {
+	font-family: "Open Sans";
+	color: #6f6f6f;
+    font-size: 14px;
+    padding-right: 40px;
+	margin-bottom: 20px;
+}
+
+.styleText {
+	font-family: "Open Sans";
+	color: #797979;
+	font-size: 90%;
+	font-weight: bold;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+
+.styleText:hover {
+	color: #007fab;
+}
+
+.styleText:active {
+	color: #c24538;
+}
+
+.imagesSize {
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.imagesEmail {
+	background-position: 0px 0px;
+}
+
+.imagesEmail:hover {
+	background-position: 0px -40px;
+}
+
+.imagesEmail:active {
+	background-position: 0px -80px;
+}
+
+.imagesSite {
+	background-position: -40px 0px;
+}
+
+.imagesSite:hover {
+	background-position: -40px -40px;
+}
+
+.imagesSite:active {
+	background-position: -40px -80px;
+}
+
+.addressCompany {
+	font-family: "Open Sans";
+	color: #797979;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.contact {
+	height: 130px;
+}
+
+.qrCodePadding {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.download {
+	font-family: "Montserrat";
+	font-size: 14px;
+	text-align: right;
+	padding: 0;
+}
+
+.textDownload {
+	color: #2e5190;
+	text-transform: uppercase;
+}
+
+.textFromAppStore {
+	color: #797979;
+}
+
+.symbol {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.qrCode {
+	margin-top: -50px;
+	height: 130px;
+}
+
+.futterLine {
+	height: 50px;
+}
+
+.buttonInForm {
+	display: inline-block;
+	position: relative;
+	left: 350px;
+}
+
+.formLine {
+	padding-bottom: 30px;
+}
+
+.labelFont { 
+	font-size: 18px; 
+
+}
+
+
+@media (max-width: 1200px) {
+	.buttonsBlock {
+		margin-top: 20px;
+		padding-left: 5px;
+		margin-right: -30px;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	body {
+		background-size: 3000px 2450px;
+		overflow-x: hidden;
+	}
+    
+    .titleApp {
+		margin-top: 40px;
+		font-size: 60px;
+	}
+
+	.contantOne {
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.contantTwo {
+		font-family: "Open Sans";
+		font-size: 14px;
+		margin-top: 20px;
+		padding-right: 70px;
+	}
+
+	.carCareApp {
+		height: 450px;
+	}
+
+	.phoneBox {
+		height: 800px;
+		margin-top: 0;
+	}
+
+	.phoneImages:hover {
+		margin-left: 60px;
+		transition: 1s;
+		position: absolute;
+	}
+
+	.screens {
+		height: 530px;
+	}
+
+	.features {
+		height: 480px;
+		margin-top: 0;
+	}
+
+	.staticQR {
+		padding-left: 120px;
+		padding-top: 50px;
+	}
+
+	.download {
+		padding-top: 20px;
+		text-align: left;
+		padding: 0;
+	}
+
+	.qrCode {
+		margin-top: 0;
+		height: 130px;
+	}
+
+	.buttonInForm {
+		left: 20px;
+	}
+}
+
+
+@media (max-width: 600px) {
+
+	body {
+		background-size: 2000px 2650px;
+	}
+
+	.carCareApp {
+		height: 380px;
+	}
+
+    
+    .titleApp {
+	margin-top: 40px;
+	font-size: 60px;
+	}
+
+	.contantOne {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+	.contantTwo {
+		font-family: "Open Sans";
+		font-size: 12px;
+		margin-top: 20px;
+		padding-right: 50px;
+	}
+
+	.buttonsBlock {
+		margin-top: 20px;
+		padding-left: 5px;
+	}
+
+	.buttons {
+		display: inline-block;
+		background: url(images/storeSmall.png) no-repeat;
+		width: 115px;
+		height: 42px;
+		cursor: pointer;
+	}
+
+	.AppStore {
+		background-position: -3px -1.5px;
+	}
+
+	.AppStore:hover {
+		background-position: -3px -46.5px
+	}
+
+	.AppStore:active {
+		background-position: -3px -91.5px
+	}
+
+	.GooglePlay {
+		background-position: -123px -1.5px;
+	}
+
+	.GooglePlay:hover {
+		background-position: -123px -46.5px;
+	}
+
+	.GooglePlay:active {
+		background-position: -123px -91.5px;
+	}
+
+	.phoneBox {
+		height: 800px;
+		margin-top: 0;
+	}
+
+	.phoneImages:hover {
+		margin-left: 0;
+		transition: 1.5s;
+		position: absolute;
+	}
+
+	.screens {
+		height: 520px;
+	}
+
+	.features {
+		height: 530px;
+		margin-top: 0;
+	}
+
+	.staticQR {
+		padding-left: 120px;
+		padding-top: 50px;
+	}
+
+	.download {
+		padding-top: 20px;
+		text-align: left;
+		padding: 0;
+	}
+
+	.qrCode {
+		margin-top: 0;
+		height: 130px;
+	}
+
+}
+
+@media (max-width: 405px) {
+
+	body {
+		background-size: 2000px 2300px;
+	}
+   
+   .titleApp {
+	margin-top: 35px;
+	font-size: 45px;
+	}
+
+	.phoneBox {
+		height: 700px;
+		margin-top: 0;
+	}
+
+	.screens {
+		height: 400px;
+	}
+
+}
+

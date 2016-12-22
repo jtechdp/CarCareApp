@@ -5,7 +5,7 @@
     	 
 	      var xhr = new XMLHttpRequest();
 
-	      xhr.open('GET', 'fail.json', false);
+	      xhr.open('GET', '/js/helpSubmit.json', false);
 	      xhr.send();
 
 
@@ -19,8 +19,7 @@
 
 		document.getElementById('format').innerHTML = '<br/><br/><ul><li>' + textRes.name + '</li><li>' +
 			textRes.surname + '</li><li>' + textRes.tel + '</li><li>' + textRes.email + '</li><li>' +
-			textRes.password + '</li><li>' + textRes.stringST + '</li><li>' + textRes.age + '</li><li>' 
-			+ textRes.xz + '</li>';
+			textRes.password + '</li><li>' + textRes.age + '</li><li>' + textRes.xz + '</li>';
 			
 		}
 

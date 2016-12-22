@@ -8,13 +8,8 @@ var file = new static.Server('.', {
 
 
 function accept(req, res) {
-
-  if (req.url == '/fail.json') {
+	
     file.serve(req, res);
-  } else {
-    file.serve(req, res);
-  }
-
 }
 
 

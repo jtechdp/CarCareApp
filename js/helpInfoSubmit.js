@@ -23,7 +23,11 @@
 
 		for (var i = 0; i < count; i++) {
 			var property = nameString[i];
-			stringOutput += textResponse[property] + '</li><li>';
+			if (i != count - 1) {
+				stringOutput += textResponse[property] + '</li><li>';
+			}else{
+				stringOutput += textResponse[property];
+			}
 		}
 
 		document.getElementById('format').innerHTML = stringOutput + '</li></ul>';

@@ -1,26 +1,31 @@
 
-    var e = document.getElementById("submitForm");
+    var elementIdHelpOutput = document.getElementById("submitForm");
 
-    e.onclick = function () {
+    elementIdHelpOutput.onclick = function () {
     	 
-	      var xhr = new XMLHttpRequest();
+	    var xhr = new XMLHttpRequest();
 
-	      xhr.open('GET', '/js/helpSubmit.json', false);
-	      xhr.send();
+	    xhr.open('GET', '/js/helpSubmit.json', false);
+	    xhr.send();
 
 
 		if (xhr.status != 200) {
-		// если ошибка то обработать ошибку
+			// если ошибка то обработать ошибку
 		document.getElementById('format').innerHTML = 'Ошибка ' + xhr.status + ': ' + xhr.statusText;
 		} else {
-		// если все ровно то вывести результат
-		var textRes = xhr.responseText;
-		textRes = JSON.parse(textRes);
+			// если все ровно то вывести результат
+		var textResponse = xhr.responseText;
+		textResponse = JSON.parse(textResponse);
 
-		document.getElementById('format').innerHTML = '<br/><br/><ul><li>' + textRes.name + '</li><li>' +
-			textRes.surname + '</li><li>' + textRes.tel + '</li><li>' + textRes.email + '</li><li>' +
-			textRes.password + '</li><li>' + textRes.age + '</li><li>' + textRes.xz + '</li>';
-			
+		var count = Object.getOwnPropertyNames(textResponse).length;
+		var nameString = Object.getOwnPropertyNames(textResponse);		
+		var stringOutput = '<br/><br/><ul><li>';
+
+		for (var i = 0; i < count; i++) {
+			var property = nameString[i];
+			stringOutput += textResponse[property] + '</li><li>';
 		}
 
+		document.getElementById('format').innerHTML = stringOutput + '</li></ul>';
     }
+}
